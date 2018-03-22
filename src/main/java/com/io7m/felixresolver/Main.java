@@ -54,16 +54,19 @@ public final class Main
 
     final TinyBundle b0 = TinyBundles.bundle();
     b0.symbolicName("com.io7m.b0");
+    b0.set("Bundle-Version", "1.0.0");
     b0.set("Import-Package", "com.io7m.b1;version=\"1.0.0\"");
     writeBundle(b0, "/tmp/b0.jar");
 
     final TinyBundle b1 = TinyBundles.bundle();
     b1.symbolicName("com.io7m.b1");
+    b1.set("Bundle-Version", "1.0.0");
     b1.set("Export-Package", "com.io7m.b1;version=\"1.0.0\"");
     writeBundle(b1, "/tmp/b1.jar");
 
     final TinyBundle b2 = TinyBundles.bundle();
     b2.symbolicName("com.io7m.b2");
+    b2.set("Bundle-Version", "1.0.0");
     b2.set("Import-Package", "com.io7m.nonexistent;version=\"1.0.0\"");
     writeBundle(b2, "/tmp/b2.jar");
 
